@@ -1,0 +1,17 @@
+.main {
+  margin: 0 auto;
+  padding: 20px 20px 40px;
+  width: 410px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+.main__section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main__section:first-child {
+  margin-top: 0;
+}

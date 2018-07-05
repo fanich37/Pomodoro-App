@@ -1,0 +1,37 @@
+.button {
+  padding: 18px 32px;
+  width: 128px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.button:not(:disabled):hover {
+  box-shadow: 1px 2px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button_green {
+  background-color: #00a597;
+}
+
+.button_orange {
+  background-color: #ff9f29;
+}
+
+.button_red {
+  background-color: #ff3501;
+}
+
+.button:disabled {
+  cursor: auto;
+  opacity: 0.5;
+}
+
+.button + .button {
+  margin-left: 10px;
+}

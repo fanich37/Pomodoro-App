@@ -1,0 +1,22 @@
+.logo {
+  display: table;
+  font-family: Anton, sans-serif;
+}
+
+.logo__cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  font-size: 50px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  color: #ff3501;
+}
+
+.logo__cell_left {
+  width: 50px;
+}
+
+.logo__img {
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,12 @@
+.timer {
+  text-align: center;
+}
+
+.timer__inner {
+  font-size: 28px;
+}
+
+.timer__data {
+  display: inline-block;
+  width: 34px;
+}
