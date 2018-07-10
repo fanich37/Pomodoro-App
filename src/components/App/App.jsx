@@ -16,12 +16,7 @@ const defaultState = {
 class App extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			min: 25,
-			sec: 0,
-			timerID: null,
-			timerState: 'stop'
-		};
+		this.state = Object.assign({}, defaultState);
 		this.setTime = this.setTime.bind(this);
 		this.startTimer = this.startTimer.bind(this);
 		this.pauseTimer = this.pauseTimer.bind(this);
@@ -29,20 +24,20 @@ class App extends React.Component {
 	}
 
 	setTime(data) {
-		const timerLength = Object.assign(this.state);
+		const timerLength = Object.assign({}, this.state);
 		timerLength.min = format(data);
 		this.setState(timerLength);
 	}
 
 	startTimer() {
 		const timerID = setInterval(() => {
-			const timer = Object.assign(timerFunc(this.state.min, this.state.sec, timerID));
+			const timer = Object.assign({}, timerFunc(this.state.min, this.state.sec, timerID));
 			this.setState(timer);
 		}, 1000);
 	}
 
 	pauseTimer() {
-		const timer = Object.assign(this.state);
+		const timer = Object.assign({}, this.state);
 		clearInterval(timer.timerID);
 		timer.timerID = null;
 		timer.timerState = 'paused';
